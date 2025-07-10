@@ -47,7 +47,7 @@ const FilterableDashboard = () => {
             newOptions[col] = [...new Set(tempFiltered.map(row => row[col]))];
         });
         return newOptions;
-    }, [filters, data]);
+    }, [filters, data, columns]);
 
     //Handle filter change
     const handleFilterChange = (selectedList, col) => {
